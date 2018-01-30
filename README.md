@@ -36,7 +36,7 @@ To make this work you'll have to:
 2. Make a file camera in home-assistant that uses the image from save_path + file_name
 3. Create a shell command in home assitant like the one below:
 
- `shell_command:
+ `shell_command:  
     get_movie_img: 'sudo python3 /home/pi/scripts/dl.py'`
 
 (my save location requeres root that is why I am calling the script with sudo)
