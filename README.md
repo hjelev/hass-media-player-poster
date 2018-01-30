@@ -14,17 +14,17 @@ To make this work you'll have to:
 
 1. Configure dl.py by updating these lines:
 
-	`# Path where the image will be saved - your hass file camera shuold point here`	
-	`save_path = '/ram'`
+	<pre># Path where the image will be saved - your hass file camera shuold point here
+	save_path = '/ram'
 	
-	`# Name for the downloaded image - your hass file camera shuold look for this file`
-	`file_name = 'movie_data'`
+	# Name for the downloaded image - your hass file camera shuold look for this file
+	file_name = 'movie_data'
 	
-	`# Password for your hass instance - this is needed to get the filename from the mediaplayer component.`
-	`hass_password = 'your_hass_password'`
+	# Password for your hass instance - this is needed to get the filename from the mediaplayer component.
+	hass_password = 'your_hass_password'
 	
-	`# This is the name of the media player we'll track and provide images/posters`
-	`mpc_name = 'mpclivingroom'`
+	# This is the name of the media player we'll track and provide images/posters
+	mpc_name = 'mpclivingroom'</pre>
   
   
 2. Make a file camera in home-assistant that uses the image from save_path + file_name
