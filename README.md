@@ -11,7 +11,7 @@ The script loads the first image from google images that is maching the file nam
 To make this work you'll have to:
 
 1. Configure dl.py by updating these lines:
-	`# Path where the image will be saved - your hass file camera shuold point here
+	`# Path where the image will be saved - your hass file camera shuold point here`
 	save_path = '/ram'
 	# Name for the downloaded image - your hass file camera shuold look for this file
 	file_name = 'movie_data'
