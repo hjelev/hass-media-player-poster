@@ -32,11 +32,11 @@ To make this work you'll have to:
 3. Create a shell command in home assitant like the one below:
 
  <pre>shell_command:   
-    get_movie_img: 'sudo python3 /home/pi/scripts/dl.py'</pre>
+    get_movie_img: 'sudo python3 /path/to/script/dl.py'</pre>
 
 (my save location requeres root that is why I am calling the script with sudo)
 
-4. Create an automation in home-assistant that will call the script once the player state is changed
+4. Create an automation in home-assistant that will call the script once the player state is changed:
 
  <pre> - id: e
     alias: Movie Poster
