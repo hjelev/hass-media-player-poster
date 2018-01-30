@@ -30,21 +30,21 @@ To make this work you'll have to:
 2. Make a file camera in home-assistant that uses the image from save_path + file_name
 3. Create a shell command in home assitant like the one below:
 
- `shell_command:  
-    get_movie_img: 'sudo python3 /home/pi/scripts/dl.py'`
+ <pre>shell_command:   
+    get_movie_img: 'sudo python3 /home/pi/scripts/dl.py'</pre>
 
 (my save location requeres root that is why I am calling the script with sudo)
 
 4. Create an automation in home-assistant that will call the script once the player state is changed
 
- ` - id: e <br />
-    alias: Movie Poster<br />
-    trigger:<br />
-    - platform: state<br />
-      entity_id: media_player.mpclivingroom<br />
+ <pre> - id: e
+    alias: Movie Poster
+    trigger:
+    - platform: state
+      entity_id: media_player.mpclivingroom
 
-    action:<br />
-    - service: shell_command.get_movie_img`
+    action:  
+    - service: shell_command.get_movie_img </pre>
   
   
 You shuold be all set now.  
